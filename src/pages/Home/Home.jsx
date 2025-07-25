@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
+import Banner from '../Banner/Banner';
 
 const Home = () => {
-    const [course, setCourse] = useState(null);
+    const [newData, setNewData] = useState(null);
 
     useEffect(() => {
         fetch('https://api.10minuteschool.com/discovery-service/api/v1/products/ielts-course?lang=en', {
@@ -11,21 +12,21 @@ const Home = () => {
             }
         })
             .then(res => res.json())
-            .then(data => setCourse(data?.data));
+            .then(data => setNewData(data?.data));
     }, []);
 
-     if (!course) {
+    if (!newData) {
         return <p>Loading...</p>;
     }
 
-    console.log(course);
+    console.log(newData);
 
     // const video = course.media?.find(m => m.type === 'youtube');
     // const instructorSection = course.sections?.find(s => s.type === 'instructor');
 
     return (
         <div>
-            <h2>HEllo bro</h2>
+            <Banner newData={newData} />
         </div>
     );
 };

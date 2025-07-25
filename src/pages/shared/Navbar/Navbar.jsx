@@ -1,42 +1,50 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import NavItem from "../../../components/NavItem";
-import DarkMode from "../../../components/DarkMode";
+import logo from '../../../../public/10_Minute_School_Logo.svg.png';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Navbar = () => {
 
     // toggle the navbar for responsive display
     const [isOpen, setIsOpen] = useState(false);
-     
+
 
     //   navbar menu items
     const navItems = (
         <>
             <NavItem route="/" name="Home"></NavItem>
-            <NavItem route="/skills" name="Skills"></NavItem>
-            <NavItem route="/admission" name="Admission"></NavItem>
-            <NavItem route="/onlineBatch" name="Online Batch"></NavItem>
-            <NavItem route="/englishCenter" name="English Center"></NavItem>
-            <div className="text-gray-300"><DarkMode></DarkMode></div>
+            <NavItem route="/" name="Skills"></NavItem>
+            <NavItem route="/" name="Admission"></NavItem>
+            <NavItem route="/" name="Online Batch"></NavItem>
+            <NavItem route="/" name="English Center"></NavItem>
+            <NavItem route="/" name="More"></NavItem>
+            <div className="flex justify-center items-center">
+                <FontAwesomeIcon icon={faPhone} style={{color: "#1cab55"}}/>
+                <span className="text-base text-[#1cab55]">16910</span>
+            </div>
+            <button className="bg-[#1cab55] text-white px-3 py-1 rounded">লগ-ইন</button>
         </>
     );
 
     return (
-        <nav className="bg-gray-800">
+        <nav className="white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
                             <Link to="/">
-                                <span className="text-white text-xl uppercase font-semibold tracking-wider">
-                                    Tꍟch <span className="text-yellow-500">Trove</span>
-                                </span>
+                                <img className="w-25 bg-transparent"
+                                    src={logo}
+                                    alt="10ms"
+                                />
                             </Link>
                         </div>
                     </div>
                     <div className="hidden md:block">
                         <div className="ml-4 flex items-center">
-                            <ul className="flex space-x-4">{navItems}</ul>
+                            <ul className="flex space-x-4 ">{navItems}</ul>
                         </div>
                     </div>
                     <div className="md:hidden">
