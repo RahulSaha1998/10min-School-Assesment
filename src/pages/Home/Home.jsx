@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Banner from '../Banner/Banner';
+import CourseInstructor from '../CourseInstructor/CourseInstructor';
 
 const Home = () => {
     const [newData, setNewData] = useState(null);
@@ -25,9 +26,15 @@ const Home = () => {
     // const instructorSection = course.sections?.find(s => s.type === 'instructor');
 
     return (
-        <div>
-            <Banner newData={newData} />
-        </div>
+        <>
+            <div>
+                <Banner newData={newData} />
+            </div>
+            <div>
+                <CourseInstructor newData={newData} />
+            </div>
+        </>
+
     );
 };
 
