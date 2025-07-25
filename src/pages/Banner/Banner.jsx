@@ -19,10 +19,10 @@ const Banner = ({ newData }) => {
                 backgroundPosition: 'center',
             }}
         >
-            <div className="m-auto container relative flex flex-col gap-4 md:flex-row md:gap-12 pb-6 md:py-10 min-h-[300px]">
+            <div className=" relative flex flex-col md:flex-row md:gap-12 pb-6 md:py-10 min-h-[calc(100vh-413px)] py-10 max-w-7xl mx-auto">
                 {/* Left side content */}
                 <div
-                    className="text-white md:mx-0 md:w-[60%] lg:w-[70%] p-4 md:p-6 rounded-lg"
+                    className="text-white md:mx-0 md:w-[60%] lg:w-[60%] p-4 md:p-6 rounded-lg"
                     style={{
                         overflow: 'hidden',
                         height: 'auto',
