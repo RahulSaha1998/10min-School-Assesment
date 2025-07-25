@@ -9,7 +9,7 @@ const Banner = ({ newData }) => {
 
     const { title, description } = newData || {};
 
-    console.log(newData);
+    // console.log(newData);
 
     return (
         <div className="w-full min-h-[300px] md:min-h-[300px]"

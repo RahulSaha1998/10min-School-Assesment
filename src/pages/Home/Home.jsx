@@ -20,8 +20,6 @@ const Home = () => {
         return <p>Loading...</p>;
     }
 
-    console.log(newData);
-
     // const video = course.media?.find(m => m.type === 'youtube');
     // const instructorSection = course.sections?.find(s => s.type === 'instructor');
 
