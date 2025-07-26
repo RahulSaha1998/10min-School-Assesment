@@ -21,7 +21,7 @@ const CourseInstructor = ({ newData }) => {
             )}
 
             <div className="flex justify-start">
-                <div className="w-full max-w-3xl flex items-center gap-5 lg:border lg:border-[#dbe1eb] px-2 lg:px-4 lg:py-10 rounded-lg">
+                <div className="w-full max-w-3xl flex items-center gap-5 md:border md:border-[#dbe1eb] px-2 md:px-4 md:py-10 rounded-lg">
                     <div className="avatar">
                         <div className="w-24 rounded-full">
                             <img src={instructor?.image} alt={instructor?.name} />
