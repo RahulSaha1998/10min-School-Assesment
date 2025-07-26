@@ -7,7 +7,6 @@ const LaidOutCourse = ({ newData }) => {
     const laidOutSection = sections?.find(
         (section) => section.type === 'features'
     );
-    console.log(laidOutSection);
 
 
 
