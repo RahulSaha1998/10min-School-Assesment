@@ -14,8 +14,8 @@ const CourseInstructor = ({ newData }) => {
     return (
         <div className='py-5 max-w-7xl mx-auto'>
             {instructorSection && (
-                <div className='mb-6 px-2'>
-                    <h1 className='text-2xl font-semibold mb-4'>
+                <div className='mb-2 px-2'>
+                    <h1 className='text-2xl font-semibold'>
                         {instructorSection.name}
                     </h1>
                 </div>
