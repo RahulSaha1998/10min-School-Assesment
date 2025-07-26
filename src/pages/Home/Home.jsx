@@ -3,6 +3,7 @@ import Banner from '../Banner/Banner';
 import CourseInstructor from '../CourseInstructor/CourseInstructor';
 import LaidOutCourse from '../LaidOutCourse/LaidOutCourse';
 import LearnCourse from '../LearnCourse/LearnCourse';
+import ExclusiveFeature from '../ExclusiveFeature/ExclusiveFeature';
 
 const Home = () => {
     const [newData, setNewData] = useState(null);
@@ -37,7 +38,10 @@ const Home = () => {
                 <LaidOutCourse newData={newData} />
             </div>
             <div>
-                <LearnCourse newData={newData} />
+                <LearnCourse />
+            </div>
+            <div>
+                <ExclusiveFeature newData={newData} />
             </div>
         </>
 
