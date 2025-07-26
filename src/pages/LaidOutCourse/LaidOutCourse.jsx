@@ -13,8 +13,8 @@ const LaidOutCourse = ({ newData }) => {
 
     return (
         <div className='py-10 max-w-7xl mx-auto'>
-            <h1 className='text-2xl font-semibold mb-4'>{laidOutSection?.name}</h1>
-            <div className='w-full max-w-3xl bg-[#111827] text-white p-4 rounded-lg grid grid-cols-1 md:grid-cols-2'>
+            <h1 className='text-2xl font-semibold mb-2 px-3'>{laidOutSection?.name}</h1>
+            <div className='w-full max-w-3xl bg-[#111827] text-white rounded-lg grid grid-cols-1 md:grid-cols-2 md:p-4'>
 
                 {laidOutSection?.values?.map((item, index) => (
                     <div key={index} className='flex flex-row items-start gap-3 m-1 justify-center p-8'>
