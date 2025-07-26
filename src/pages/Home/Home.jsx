@@ -24,11 +24,9 @@ const Home = () => {
         return <p>Loading...</p>;
     }
 
-    // const video = course.media?.find(m => m.type === 'youtube');
-    // const instructorSection = course.sections?.find(s => s.type === 'instructor');
-
     return (
         <>
+            
             <div>
                 <Banner newData={newData} />
             </div>
