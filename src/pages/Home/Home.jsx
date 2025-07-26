@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Banner from '../Banner/Banner';
 import CourseInstructor from '../CourseInstructor/CourseInstructor';
 import LaidOutCourse from '../LaidOutCourse/LaidOutCourse';
+import LearnCourse from '../LearnCourse/LearnCourse';
 
 const Home = () => {
     const [newData, setNewData] = useState(null);
@@ -34,6 +35,9 @@ const Home = () => {
             </div>
             <div>
                 <LaidOutCourse newData={newData} />
+            </div>
+            <div>
+                <LearnCourse newData={newData} />
             </div>
         </>
 
