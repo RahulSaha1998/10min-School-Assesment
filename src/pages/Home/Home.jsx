@@ -32,9 +32,9 @@ const Home = () => {
             <div>
                 <CourseInstructor newData={newData} />
             </div>
-            {/* <div>
+            <div>
                 <LaidOutCourse newData={newData} />
-            </div> */}
+            </div>
         </>
 
     );

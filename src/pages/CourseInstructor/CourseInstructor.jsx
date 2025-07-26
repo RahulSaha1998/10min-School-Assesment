@@ -2,6 +2,7 @@ import React from 'react';
 import parse from 'html-react-parser';
 
 const CourseInstructor = ({ newData }) => {
+    
     const { sections } = newData || {};
 
     const instructorSection = sections?.find(
