@@ -11,7 +11,7 @@ const CourseInstructor = ({ newData }) => {
     const instructor = instructorSection?.values?.[0];
 
     return (
-        <div className='min-h-[calc(100vh-413px)] py-10 max-w-7xl mx-auto'>
+        <div className='py-10 max-w-7xl mx-auto'>
             {instructorSection && (
                 <div className='mb-6'>
                     <h1 className='text-2xl font-semibold mb-4'>

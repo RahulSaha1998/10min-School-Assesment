@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Banner from '../Banner/Banner';
 import CourseInstructor from '../CourseInstructor/CourseInstructor';
+import LaidOutCourse from '../LaidOutCourse/LaidOutCourse';
 
 const Home = () => {
     const [newData, setNewData] = useState(null);
@@ -31,6 +32,9 @@ const Home = () => {
             <div>
                 <CourseInstructor newData={newData} />
             </div>
+            {/* <div>
+                <LaidOutCourse newData={newData} />
+            </div> */}
         </>
 
     );
