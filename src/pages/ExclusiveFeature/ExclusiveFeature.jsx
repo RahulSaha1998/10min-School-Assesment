@@ -9,13 +9,9 @@ const ExclusiveFeature = ({ newData }) => {
     const features = sections?.find(
         (section) => section.name === 'Course Exclusive Feature'
     );
-    console.log(features);
 
     const feature1 = features?.values?.[0];
     const feature2 = features?.values?.[1];
-
-    console.log(feature1);
-    console.log(feature2);
 
 
     return (

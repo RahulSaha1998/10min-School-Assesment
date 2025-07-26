@@ -2,7 +2,7 @@ import React from 'react';
 import parse from 'html-react-parser';
 
 const CourseInstructor = ({ newData }) => {
-    
+
     const { sections } = newData || {};
 
     const instructorSection = sections?.find(
@@ -30,9 +30,9 @@ const CourseInstructor = ({ newData }) => {
                     </div>
                     <div>
                         <h2 className='text-xl font-semibold hover:text-[#1cab55] hover:cursor-pointer'>{instructor?.name}</h2>
-                        <p className='text-gray-500'>
+                        <div className='text-gray-500'>
                             {parse(instructor?.description || '')}
-                        </p>
+                        </div>
                     </div>
                 </div>
             </div>
