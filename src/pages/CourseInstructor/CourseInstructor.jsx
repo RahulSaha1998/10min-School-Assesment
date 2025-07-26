@@ -12,7 +12,7 @@ const CourseInstructor = ({ newData }) => {
     const instructor = instructorSection?.values?.[0];
 
     return (
-        <div className='py-10 max-w-7xl mx-auto'>
+        <div className='py-5 max-w-7xl mx-auto'>
             {instructorSection && (
                 <div className='mb-6 px-2'>
                     <h1 className='text-2xl font-semibold mb-4'>
@@ -22,7 +22,7 @@ const CourseInstructor = ({ newData }) => {
             )}
 
             <div className="flex justify-start">
-                <div className="w-full max-w-3xl flex items-center gap-5 md:border md:border-[#dbe1eb] px-2 md:px-4 md:py-10 rounded-lg">
+                <div className="w-full max-w-3xl flex items-center gap-5 md:border md:border-[#dbe1eb] px-2 md:px-4 md:py-5 rounded-lg">
                     <div className="avatar">
                         <div className="w-24 rounded-full">
                             <img src={instructor?.image} alt={instructor?.name} />

@@ -19,7 +19,7 @@ const Banner = ({ newData }) => {
                 backgroundPosition: 'center',
             }}
         >
-            <div className=" relative flex flex-col md:flex-row md:gap-12 pb-6 md:py-10 py-10 max-w-7xl mx-auto">
+            <div className=" relative flex flex-col md:flex-row md:gap-12 pb-6 md:py-5 py-5 max-w-7xl mx-auto">
                 {/* Left side content */}
                 <div
                     className="text-white md:mx-0 md:w-[60%] lg:w-[60%] p-4 md:p-6 rounded-lg"

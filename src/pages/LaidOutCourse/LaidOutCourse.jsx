@@ -11,7 +11,7 @@ const LaidOutCourse = ({ newData }) => {
 
 
     return (
-        <div className='py-10 max-w-7xl mx-auto'>
+        <div className='py-5 max-w-7xl mx-auto'>
             <h1 className='text-2xl font-semibold mb-2 px-3'>{laidOutSection?.name}</h1>
             <div className='w-full max-w-3xl bg-[#111827] text-white rounded-lg grid grid-cols-1 md:grid-cols-2 md:p-4'>
 

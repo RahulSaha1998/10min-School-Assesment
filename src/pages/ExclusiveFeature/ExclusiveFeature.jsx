@@ -15,7 +15,7 @@ const ExclusiveFeature = ({ newData }) => {
 
 
     return (
-        <div className='py-10 max-w-7xl mx-auto'>
+        <div className='py-5 max-w-7xl mx-auto'>
             <h1 className='text-2xl font-semibold mb-4 px-3'>
                 {features.name}
             </h1>

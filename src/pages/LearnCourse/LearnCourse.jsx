@@ -4,7 +4,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 const LearnCourse = () => {
     return (
-        <div className='py-10 max-w-7xl mx-auto'>
+        <div className='py-5 max-w-7xl mx-auto'>
             <h1 className='text-2xl font-semibold mb-2 px-3'>What you will learn by doing the course</h1>
             <div className='w-full max-w-3xl p-3 md:p-4 rounded-lg grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-6 md:border md:border-[#dbe1eb]'>
                 <div className='flex items-start gap-2 mb-2'>

@@ -65,7 +65,7 @@ const CourseDetails = () => {
 
 
     return (
-        <div className='py-10 max-w-7xl mx-auto'>
+        <div className='py-5 max-w-7xl mx-auto'>
             <h1 className='text-2xl font-semibold mb-2 px-3'>Course Details</h1>
             <div className="w-full max-w-3xl rounded-lg border border-gray-200 divide-y divide-dashed divide-gray-300">
                 {accordionData.map((item, index) => (
