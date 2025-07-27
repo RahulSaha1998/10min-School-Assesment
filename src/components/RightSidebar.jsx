@@ -17,7 +17,7 @@ const RightSidebar = ({ newData }) => {
     };
 
     return (
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-7xl mx-auto">
             <Carousel
                 selectedItem={selectedSlide}
                 onChange={handleSlideChange}

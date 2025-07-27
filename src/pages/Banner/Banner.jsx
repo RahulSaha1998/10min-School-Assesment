@@ -18,34 +18,24 @@ const Banner = ({ newData }) => {
                 backgroundPosition: 'center',
             }}
         >
-            <div className=" relative flex flex-col md:flex-row md:gap-12 pb-6 md:py-5 py-5 max-w-7xl mx-auto">
-                {/* Left side content */}
-                <div
-                    className="text-white md:mx-0 md:w-[60%] lg:w-[60%] p-4 md:p-6 rounded-lg"
-                    style={{
-                        overflow: 'hidden',
-                        height: 'auto',
-                        maskImage: 'none',
-                    }}
-                >
-                    <div>
-                        <h1 className='text-4xl font-semibold mb-4'>
-                            {title}</h1>
-                        <div className='md:flex items-center gap-2 mb-2'>
-                            <div>
-                                <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
-                                <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
-                                <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
-                                <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
-                                <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
-                            </div>
-                            <div>
-                                <h2>(82.6% শিক্ষার্থী কোর্স শেষে ৫ রেটিং দিয়েছেন)</h2>
-                            </div>
+            <div className="flex flex-col md:flex-row md:gap-12 pb-6 md:py-10 max-w-7xl mx-auto">
+                <div className='text-white p-4 md:p-6 md:ml-10'>
+                    <h1 className='text-4xl font-semibold mb-4'>
+                        {title}</h1>
+                    <div className='md:flex items-center gap-2 mb-2'>
+                        <div>
+                            <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
+                            <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
+                            <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
+                            <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
+                            <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
                         </div>
-                        <div className="md:w-160 text-gray-400 text-base">
-                            {parse(description)}
+                        <div>
+                            <h2>(82.6% শিক্ষার্থী কোর্স শেষে ৫ রেটিং দিয়েছেন)</h2>
                         </div>
+                    </div>
+                    <div className="md:w-160 text-gray-400 text-base">
+                        {parse(description)}
                     </div>
                 </div>
             </div>

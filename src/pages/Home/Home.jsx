@@ -27,16 +27,8 @@ const Home = () => {
 
     return (
         <div className="relative">
-            {/* For mobile responsive design, the sidebar is hidden. */}
-            <div className='w-full md:hidden md:w-[22%] md:absolute md:right-90 md:top-[50px] z-10 border rounded-lg bg-white'>
-                <RightSidebar newData={newData} />
-            </div>
-
-            <div>
-                <Banner newData={newData} />
-            </div>
             <div className='flex flex-col md:flex-row gap-4 max-w-7xl mx-auto px-4 md:px-0'>
-                <div>
+                <div className='md:ml-10'>
                     <div>
                         <CourseInstructor newData={newData} />
                     </div>
@@ -53,7 +45,7 @@ const Home = () => {
                         <CourseDetails />
                     </div>
                 </div>
-                <div className='w-full md:w-[22%] md:absolute md:right-90 md:top-[50px] z-10 border rounded-lg bg-white'>
+                <div className='w-full md:w-[30%] md:absolute md:right-10 md:top-[-250px] z-10 border rounded-lg bg-white'>
                     <RightSidebar newData={newData} />
                 </div>
             </div>
