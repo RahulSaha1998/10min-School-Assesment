@@ -7,6 +7,7 @@ import ExclusiveFeature from '../ExclusiveFeature/ExclusiveFeature';
 import CourseDetails from '../CourseDetails/CourseDetails';
 import RightSidebar from '../../components/RightSidebar';
 import CheckList from '../../components/CheckList';
+import Loader from '../../components/Loader';
 
 const Home = () => {
     const [newData, setNewData] = useState(null);
@@ -23,7 +24,7 @@ const Home = () => {
     }, []);
 
     if (!newData) {
-        return <p>Loading...</p>;
+        return <Loader/>;
     }
 
     return (

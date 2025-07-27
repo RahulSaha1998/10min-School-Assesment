@@ -4,6 +4,7 @@ import Footer from '../pages/shared/Footer/Footer';
 import Banner from '../pages/Banner/Banner';
 import { useEffect, useState } from 'react';
 import RightSidebar from '../components/RightSidebar';
+import Loader from '../components/Loader';
 
 const MainLayout = () => {
     const [newData, setNewData] = useState(null);
@@ -20,7 +21,7 @@ const MainLayout = () => {
     }, []);
 
     if (!newData) {
-        return <p>Loading...</p>;
+        return <Loader/>;
     }
     return (
         <div >
