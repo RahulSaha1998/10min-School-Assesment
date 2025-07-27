@@ -5,8 +5,8 @@ const CheckList = ({ newData }) => {
 
     console.log(newData);
     const { checklist, cta_text } = newData || {};
-    const currentPrice = 3850;
-    const originalPrice = 5000;
+    const currentPrice = 1000;
+    const originalPrice = 2250;
     const discount = originalPrice - currentPrice;
 
     return (
