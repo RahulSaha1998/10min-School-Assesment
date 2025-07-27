@@ -27,6 +27,10 @@ const Home = () => {
 
     return (
         <div className="relative">
+            {/* For mobile responsive design, the sidebar is hidden. */}
+            <div className='w-full md:hidden md:w-[22%] md:absolute md:right-90 md:top-[50px] z-10 border rounded-lg bg-white'>
+                <RightSidebar newData={newData} />
+            </div>
 
             <div>
                 <Banner newData={newData} />

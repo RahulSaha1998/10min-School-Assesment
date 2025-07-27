@@ -1,5 +1,4 @@
 import React from 'react';
-import SidebarSection from '../../components/SIdebarSection';
 import parse from 'html-react-parser';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
@@ -32,7 +31,7 @@ const Banner = ({ newData }) => {
                     <div>
                         <h1 className='text-4xl font-semibold mb-4'>
                             {title}</h1>
-                        <div className='flex items-center gap-2 mb-2'>
+                        <div className='md:flex items-center gap-2 mb-2'>
                             <div>
                                 <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
                                 <FontAwesomeIcon icon={faStar} style={{ color: "#FFD43B" }} />
@@ -44,14 +43,11 @@ const Banner = ({ newData }) => {
                                 <h2>(82.6% শিক্ষার্থী কোর্স শেষে ৫ রেটিং দিয়েছেন)</h2>
                             </div>
                         </div>
-                        <div className="w-160 text-gray-400 text-base">
+                        <div className="md:w-160 text-gray-400 text-base">
                             {parse(description)}
                         </div>
                     </div>
                 </div>
-
-                {/* Right side sidebar */}
-                {/* <SidebarSection newData={newData}/> */}
             </div>
 
         </div>
