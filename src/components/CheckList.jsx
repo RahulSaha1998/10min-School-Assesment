@@ -3,7 +3,7 @@ import React from 'react';
 const CheckList = ({ newData }) => {
 
     console.log(newData);
-    const {checklist} = newData || {};
+    const { checklist, cta_text } = newData || {};
     const currentPrice = 3850;
     const originalPrice = 5000;
     const discount = originalPrice - currentPrice;
@@ -18,14 +18,23 @@ const CheckList = ({ newData }) => {
                     {discount} টাকা ছাড়
                 </div>
             </div>
-            {
-                checklist?.map((item, index) => (
-                    <div key={index} className="flex items-center space-x-2 mt-2">
-                        <img src={item.icon} width="20px" height='20px' alt="" />
-                        <span className="text-gray-700">{item.text}</span>
-                    </div>
-                ))
-            }
+            <div className='py-5'>
+                <button className="w-full text-white text-lg bg-[#1cab55] p-2 rounded-lg border-b-4 border-b-[#14773b]">
+                    {cta_text?.name}
+                </button>
+            </div>
+            <div>
+                <h2 className='text-[#111827] text-lg font-semibold'>এই কোর্সে যা থাকছে</h2>
+                {
+                    checklist?.map((item, index) => (
+                        <div key={index} className="flex items-center space-x-2 mt-2">
+                            <img src={item.icon} width="20px" height='20px' alt="" />
+                            <span className="text-[#111827] text-base">{item.text}</span>
+                        </div>
+                    ))
+                }
+            </div>
+
         </div>
     );
 };
