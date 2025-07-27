@@ -51,7 +51,7 @@ const Banner = ({ newData }) => {
                 </div>
 
                 {/* Right side sidebar */}
-                <SidebarSection />
+                {/* <SidebarSection newData={newData}/> */}
             </div>
 
         </div>

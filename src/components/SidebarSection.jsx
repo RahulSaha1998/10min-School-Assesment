@@ -1,8 +1,10 @@
 import React from 'react';
 
-const SidebarSection = () => {
+const SidebarSection = ({ newData }) => {
 
-    
+  console.log(newData);
+
+
   return (
     <section className="w-full md:max-w-[330px] lg:max-w-[400px] order-2 bg-white absolute right-0 md:top-[50px] md:absolute">
       <div className="md:sticky md:top-[112px]">
