@@ -6,6 +6,7 @@ import LearnCourse from '../LearnCourse/LearnCourse';
 import ExclusiveFeature from '../ExclusiveFeature/ExclusiveFeature';
 import CourseDetails from '../CourseDetails/CourseDetails';
 import RightSidebar from '../../components/RightSidebar';
+import CheckList from '../../components/CheckList';
 
 const Home = () => {
     const [newData, setNewData] = useState(null);
@@ -45,8 +46,11 @@ const Home = () => {
                         <CourseDetails />
                     </div>
                 </div>
-                <div className='w-full md:w-[30%] md:absolute md:right-10 md:top-[-250px] z-10 border rounded-lg bg-white'>
+                <div className='w-full md:w-[30%] md:absolute md:right-10 md:top-[-250px] z-10 border border-[#dbe1eb] rounded-lg bg-white'>
                     <RightSidebar newData={newData} />
+                    <div>
+                        <CheckList newData={newData} />
+                    </div>
                 </div>
             </div>
         </div>
