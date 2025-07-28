@@ -1,12 +1,14 @@
-# React + Vite
+## Hello There, Here are some features and the live website link of this project -
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Netlify Live Site Link -> https://10minschool.netlify.app/
+- Github repo link -> https://github.com/RahulSaha1998/10min-School-Assesment
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Basic Features Details
+- This is a mobile-responsive website.
+- Added Header Part.
+- Course Details Section.
+- Product Trailer (YouTube player).
+- Course Instructor section.
+- Description about the course.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
